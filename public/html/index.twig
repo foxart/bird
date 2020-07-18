@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{ title|upper }}</title>
+		{{ head|raw }}
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body id="fa">
+		<header>
+			<div id="header-wrapper">
+				{{ menu|raw }}
+			</div>
+		</header>
+		<main>
+			<div id="main-wrapper">
+				<div class="row">
+					<h1>{{ title|capitalize }}</h1>
+				</div>
+				<div class="indent-6"></div>
+				<div class="row">
+					<div class="col-2">
+						<div>
+							<button id="start">start</button>
+						</div>
+						<div class="indent-1"></div>
+						<div id="data">
+							data
+						</div>
+						<div class="indent-1"></div>
+					</div>
+					<div class="col-10" style="border: solid 1px;">
+						<canvas id="canvas" height="600" width="900"></canvas>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div id="footer-wrapper">
+				{{ footer }}
+			</div>
+		</footer>
+	</body>
+</html>

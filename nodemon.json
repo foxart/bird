@@ -1,0 +1,15 @@
+{
+	"verbose": true,
+	"watch": [
+		"app",
+		"public"
+	],
+	"ext": "js, twig",
+	"ignoreRoot": [
+		".git"
+	],
+	"ignore": [
+		"node_modules",
+		"sql/*"
+	]
+}

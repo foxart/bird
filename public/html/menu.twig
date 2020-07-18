@@ -1,0 +1,30 @@
+<div class="row">
+	<div class="col-6">
+		<a href="/">main</a> |
+		{% for link in links %}
+			<a href="/{{ link }}">{{ link }}</a> |
+		{% endfor %}
+	</div>
+	<div class="col-6">
+		<span>
+			<input type="radio" id="loc" name="instance" value="loc" checked>
+			<label for="loc">loc</label>
+		</span>
+		<span>
+			<input type="radio" id="serverless" name="instance" value="sls">
+			<label for="serverless">sls</label>
+		</span>
+		<span>
+			<input type="radio" id="dev" name="instance" value="dev">
+			<label for="dev">dev</label>
+		</span>
+		<span>
+			<input type="radio" id="qa" name="instance" value="qa">
+			<label for="qa">qa</label>
+		</span>
+		<span>
+			<input type="radio" id="tmp" name="instance" value="tmp">
+			<label for="tmp">tmp</label>
+		</span>
+	</div>
+</div>
