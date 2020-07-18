@@ -14,10 +14,10 @@ window.addEventListener('load', function() {
 	document.addEventListener('keydown', function() {
 		birdFlyUp(bird);
 	});
-	loop();
-	// document.getElementById('start').addEventListener('click', function() {
-	// 	document.getElementById('start').remove();
-	// });
+	document.getElementById('start').addEventListener('click', function() {
+		document.getElementById('start').remove();
+		loop();
+	});
 });
 
 function birdInit(canvas) {
