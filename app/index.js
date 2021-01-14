@@ -118,7 +118,7 @@ function loop() {
 		pipe.x -= pipe.speed;
 		drawPipe(pipe);
 	}
-	// drawAxis();
+	drawAxis();
 	birdFlyDown(bird);
 	drawBird(bird);
 	const firstPipe = pipes[0];
